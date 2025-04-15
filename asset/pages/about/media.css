@@ -1,0 +1,26 @@
+/* Large devices (desktops, 992px and below) */
+/* Medium devices (tablets, 768px to 991.98px) */
+@media (max-width: 992px) {
+  section.singers .container .wrapper .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Small devices (landscape phones, 576px to 767.98px) */
+@media (max-width: 768px) {
+  section.singers .container .wrapper {
+    grid-template-columns: 1fr;
+  }
+  section.about .container {
+    padding: 2rem;
+  }
+  section.about .container .wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  section.about .container .wrapper .social {
+    padding-left: 0;
+    gap: 2rem;
+  }
+}
+/* Extra small devices (phones, less than 576px) *//*# sourceMappingURL=media.css.map */

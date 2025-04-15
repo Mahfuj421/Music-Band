@@ -1,0 +1,21 @@
+/* Base styles (1400px and up) */
+/* Extra large devices - xl */
+/* Large devices - lg */
+@media (max-width: 1200px) {
+  /* Styles for < 1200px */
+}
+/* Medium devices - md */
+/* Small devices - sm */
+/* Extra small devices - xs */
+@media (max-width: 575px) {
+  section.singer .container .wrapper .box {
+    background-color: white;
+  }
+  section.singer .container .wrapper .box img {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  footer .container {
+    padding: 1rem 0;
+  }
+}/*# sourceMappingURL=style_media.css.map */

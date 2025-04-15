@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(1200px, 97%);
+  margin: 0 auto;
+}
+
+header nav .navbar-nav {
+  gap: 3rem;
+}
+header nav .navbar-nav .nav-item {
+  font-size: 1.5rem;
+}
+header nav .navbar-nav .nav-item .nav-link {
+  transition: 0.4s;
+  position: relative;
+}
+header nav .navbar-nav .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #E62701 !important;
+}
+header nav .navbar-nav .nav-item:hover ::after {
+  width: 100%;
+}
+header .navbar .navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Fugaz One", sans-serif;
+}
+
+.custom-nav {
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+section.about {
+  background-color: #121212;
+}
+section.about .container {
+  padding: 3rem 0;
+}
+section.about .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.about .container .wrapper .text h3 {
+  color: rgb(250, 76, 41);
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1rem;
+}
+section.about .container .wrapper .text p {
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: white;
+}
+section.about .container .wrapper .social {
+  padding-left: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section.about .container .wrapper .social .insta h3 {
+  color: rgb(250, 76, 41);
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1rem;
+}
+section.about .container .wrapper .social .insta .holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  place-items: center;
+  gap: 1rem;
+}
+section.about .container .wrapper .social .insta .holder img {
+  width: 100%;
+}
+section.about .container .wrapper .social .medias h3 {
+  color: rgb(250, 76, 41);
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1rem;
+}
+section.about .container .wrapper .social .medias p {
+  color: white;
+  margin-bottom: 1rem;
+}
+section.about .container .wrapper .social .medias .icons {
+  display: flex;
+  gap: 0.5rem;
+  color: white;
+}
+section.about .container .wrapper .social .medias .icons .box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+footer {
+  background-color: black;
+}
+footer .container {
+  padding: 2rem 0;
+}
+footer .container .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container .wrapper .left p,
+footer .container .wrapper .right p {
+  color: white;
+}
+footer .container .wrapper .left p span,
+footer .container .wrapper .right p span {
+  color: #E62701;
+}
+
+@media (max-width: 768px) {
+  section.about .container {
+    padding: 2rem;
+  }
+  section.about .container .wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  section.about .container .wrapper .social {
+    padding-left: 0;
+    gap: 2rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .container {
+    padding: 1rem 0;
+  }
+}/*# sourceMappingURL=globalstyle.css.map */

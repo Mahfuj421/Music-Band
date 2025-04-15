@@ -1,0 +1,108 @@
+header {
+  height: 100dvh;
+}
+header .carousel-item {
+  height: 100%;
+  overflow: hidden;
+}
+header .carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.album {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgba(0, 0, 0, 0.945);
+  color: white;
+}
+section.album .container {
+  padding: 5rem 0;
+}
+section.album .container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+section.album .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  place-items: center;
+  row-gap: 1rem;
+}
+section.album .container .wrapper .box {
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0px 3px 10px white;
+  overflow: hidden;
+  position: relative;
+}
+section.album .container .wrapper .box:hover img {
+  transform: scale(105%);
+}
+section.album .container .wrapper .box img {
+  width: 100%;
+  height: 90%;
+  transition: 1s;
+  position: relative;
+}
+section.album .container .wrapper .box .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  z-index: 10;
+  background-color: black;
+}
+section.album .container .wrapper .box .text > p {
+  color: rgb(250, 76, 41);
+}
+section.album .container .wrapper .box .text .title {
+  display: flex;
+  gap: 0.5rem;
+  height: 100%;
+}
+section.album .container .wrapper .box .text .title i {
+  margin-top: 5px;
+}
+
+section.singer {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #181818;
+}
+section.singer .container {
+  padding: 3rem 0;
+}
+section.singer .container h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+section.singer .container h2 span {
+  color: rgb(250, 76, 41);
+}
+section.singer .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.8rem;
+  place-items: center;
+}
+section.singer .container .wrapper .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.singer .container .wrapper .box img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

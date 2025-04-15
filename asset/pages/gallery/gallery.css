@@ -1,0 +1,41 @@
+section.banner {
+  height: 40vh;
+  background-image: url(../../images/gallerybanner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.banner button {
+  border: none;
+  background-color: #FA4C29;
+  padding: 0.5rem 0.8rem;
+}
+section.banner button h3 {
+  font-size: 2rem;
+  color: white;
+}
+
+section.gallery {
+  background-color: #181818;
+}
+section.gallery .container {
+  padding: 4.5rem 0;
+}
+section.gallery .container .row .col {
+  overflow: hidden;
+}
+section.gallery .container .row .col .holder {
+  border: 5px solid rgb(68, 67, 67);
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+}
+section.gallery .container .row .col .holder img {
+  transition: 1s;
+  overflow: hidden;
+}
+section.gallery .container .row .col .holder img:hover {
+  transform: scale(105%);
+}/*# sourceMappingURL=gallery.css.map */

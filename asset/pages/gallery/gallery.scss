@@ -1,0 +1,55 @@
+// banner section
+section.banner {
+    height: 40vh;
+    background-image: url(../../images/gallerybanner.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        border: none;
+        background-color: #FA4C29;
+        padding: 0.5rem 0.8rem;
+
+        h3 {
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}
+
+// /* gallery section */
+section.gallery {
+    background-color: #181818;
+
+    .container {
+        padding: 4.5rem 0;
+
+        .row {
+            .col {
+                overflow: hidden;
+
+                .holder {
+                    border: 5px solid rgb(68, 67, 67);
+                    overflow: hidden;
+                    max-width: 400px;
+                    margin: 0 auto;
+
+                    img {
+
+                        transition: 1s;
+                        overflow: hidden;
+
+
+                        &:hover {
+                            transform: scale(105%);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
