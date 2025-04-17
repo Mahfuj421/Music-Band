@@ -48,6 +48,7 @@ section.album .container .row .box .holder img {
 section.banner {
   height: 40vh;
   background-image: url(./asset/images/bottombanner.png);
+  background-color:red;
   background-size: cover;
   background-position: top;
   display: flex;
