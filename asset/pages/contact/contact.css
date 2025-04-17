@@ -7,39 +7,63 @@ section.banner {
   justify-content: center;
   align-items: center;
 }
-section.banner button {
-  border: none;
-  background-color: #FA4C29;
-  padding: 0.5rem 0.8rem;
-}
-section.banner button h3 {
-  font-size: 2rem;
-  color: white;
-}
 
-section.facebook {
-  height: 40vh;
-  background-color: #181818;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section.facebook .container {
+section.form .container {
   padding: 5rem 0;
+}
+section.form .container .wrapper form {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  color: white;
   align-items: center;
+  gap: 2rem;
 }
-section.facebook .container h2 {
-  font-size: 2rem;
+section.form .container .wrapper form i {
   color: white;
+  font-size: 3rem;
+  background: #212529;
   text-align: center;
 }
-section.facebook .container .box a i {
-  text-align: center;
+section.form .container .wrapper form .email {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  flex-direction: column;
+}
+section.form .container .wrapper form .email input {
+  outline: none;
+  max-width: 800px;
   color: white;
-  font-size: 5em;
-}/*# sourceMappingURL=contact.css.map */
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 0.2rem;
+  box-shadow: 0px 2px 10px white;
+}
+section.form .container .wrapper form .text {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  flex-direction: column;
+}
+section.form .container .wrapper form .text textarea {
+  max-width: 400px;
+  height: 200px;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 0.2rem;
+  box-shadow: 0px 2px 10px white;
+}
+section.form .container .wrapper form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+}
