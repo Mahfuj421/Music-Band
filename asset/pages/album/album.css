@@ -7,15 +7,6 @@ section.banner {
   justify-content: center;
   align-items: center;
 }
-section.banner button {
-  border: none;
-  background-color: #FA4C29;
-  padding: 0.5rem 0.8rem;
-}
-section.banner button h3 {
-  font-size: 2rem;
-  color: white;
-}
 
 section.album {
   font-family: "Ubuntu", sans-serif;
@@ -25,44 +16,42 @@ section.album {
 section.album .container {
   padding: 5rem 0;
 }
-section.album .container .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  place-items: center;
-  row-gap: 1rem;
+section.album .container h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
-section.album .container .wrapper .box {
-  max-width: 250px;
-  max-height: 350px;
-  box-shadow: 0px 3px 10px white;
+section.album .container .row {
+  gap: 3rem;
+}
+section.album .container .row .col .box {
+  margin: 0 auto;
+  width: 250px;
+  height: 410px;
+  outline: 5px solid rgba(255, 255, 255, 0.192);
+}
+section.album .container .row .col .box .image {
+  margin: 0 auto;
   overflow: hidden;
-  position: relative;
 }
-section.album .container .wrapper .box:hover img {
-  transform: scale(105%);
+section.album .container .row .col .box .image:hover img {
+  transform: scale(110%);
+  transition: 0.8s;
 }
-section.album .container .wrapper .box img {
+section.album .container .row .col .box .image img {
   width: 100%;
-  height: 90%;
-  transition: 1s;
-  position: relative;
+  height: 350;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-section.album .container .wrapper .box .text {
+section.album .container .row .col .box .text {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  z-index: 10;
+  padding-top: 1rem;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
   background-color: black;
+  box-shadow: 0px 2px 100px white;
 }
-section.album .container .wrapper .box .text > p {
-  color: rgb(250, 76, 41);
-}
-section.album .container .wrapper .box .text .title {
-  display: flex;
-  gap: 0.5rem;
-  height: 100%;
-}
-section.album .container .wrapper .box .text .title i {
-  margin-top: 5px;
-}/*# sourceMappingURL=album.css.map */
