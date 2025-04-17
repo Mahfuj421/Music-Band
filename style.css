@@ -25,85 +25,64 @@ section.album .container h1 {
   font-size: 2rem;
   margin-bottom: 3rem;
 }
-section.album .container .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  place-items: center;
-  row-gap: 1rem;
+section.album .container .row {
+  margin: 0 auto;
 }
-section.album .container .wrapper .box {
-  max-width: 250px;
-  max-height: 350px;
-  box-shadow: 0px 3px 10px white;
+section.album .container .row .box {
   overflow: hidden;
-  position: relative;
+  background-color: white;
+  width: 200px;
+  margin: 0 auto;
 }
-section.album .container .wrapper .box:hover img {
-  transform: scale(105%);
+section.album .container .row .box .holder {
+  border: 5px solid rgb(94, 92, 92);
+  overflow: hidden;
 }
-section.album .container .wrapper .box img {
-  width: 100%;
-  height: 90%;
-  transition: 1s;
-  position: relative;
+section.album .container .row .box .holder:hover img {
+  transform: scale(110%);
 }
-section.album .container .wrapper .box .text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  z-index: 10;
-  background-color: black;
-}
-section.album .container .wrapper .box .text > p {
-  color:#FA4C29;
-  font-weight:600;
-}
-section.album .container .wrapper .box .text .title {
-  display: flex;
-  gap: 0.5rem;
-  height: 100%;
-}
-section.album .container .wrapper .box .text .title i {
-  margin-top: 5px;
+section.album .container .row .box .holder img {
+  transition: 0.8s;
 }
 
-section.singer {
-  font-family: "Ubuntu", sans-serif;
-  background-color: #181818;
-}
-section.singer .container {
-  padding: 3rem 0;
-}
-section.singer .container h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2rem;
-  color: white;
-  font-weight: 700;
-}
-section.singer .container h2 span {
-  color: rgb(250, 76, 41);
-}
-section.singer .container .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 0.8rem;
-  place-items: center;
-}
-section.singer .container .wrapper .box {
+section.banner {
+  height: 40vh;
+  background-image: url(./asset/images/bottombanner.png);
+  background-size: cover;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.singer .container .wrapper .box img {
+
+section.members {
+  background-color: rgb(27, 26, 26);
+}
+section.members .container {
+  padding: 5rem 0;
+}
+section.members .container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+section.members .container .row {
+  margin: 0;
+}
+section.members .container .row .col {
+  display: flex;
+  justify-content: center;
+}
+section.members .container .row .col img {
   width: 150px;
   height: 150px;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  position: relative;
+  display: block;
 }
