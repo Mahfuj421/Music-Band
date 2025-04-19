@@ -7,15 +7,6 @@ section.banner {
   justify-content: center;
   align-items: center;
 }
-section.banner button {
-  border: none;
-  background-color: #FA4C29;
-  padding: 0.5rem 0.8rem;
-}
-section.banner button h3 {
-  font-size: 2rem;
-  color: white;
-}
 
 section.gallery {
   background-color: #181818;
