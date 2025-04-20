@@ -23,6 +23,7 @@ section.album .container h1 {
   font-weight: 500;
 }
 section.album .container .row {
+  margin: 0 auto;
   gap: 3rem;
 }
 section.album .container .row .col .box {
