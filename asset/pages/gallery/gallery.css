@@ -14,6 +14,9 @@ section.gallery {
 section.gallery .container {
   padding: 4.5rem 0;
 }
+section.gallery .container .row{
+  margin: 0 auto;
+}
 section.gallery .container .row .col {
   overflow: hidden;
 }
