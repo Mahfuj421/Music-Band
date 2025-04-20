@@ -8,15 +8,6 @@ section.hero {
   justify-content: center;
   align-items: center;
 }
-section.hero button {
-  border: none;
-  background-color: #FA4C29;
-  padding: 0.5rem 0.8rem;
-}
-section.hero button h3 {
-  font-size: 2rem;
-  color: white;
-}
 
 section.singers {
   background-color: #181818;
