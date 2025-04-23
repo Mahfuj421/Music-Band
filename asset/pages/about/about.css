@@ -23,7 +23,7 @@ section.singers .container .wrapper {
 }
 section.singers .container .wrapper .box {
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
   gap: 1rem;
   width: 100%;
